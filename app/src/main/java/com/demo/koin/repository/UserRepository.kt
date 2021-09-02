@@ -5,6 +5,6 @@ import com.demo.koin.remote.ApiService
 /**
  * Created by ThanhPQ
  */
-class UserRepository(private val apiInterface: ApiService) {
-    fun getAllUsers() = apiInterface.getUsers()
+class UserRepository(private val apiService: ApiService) {
+    fun getAllUsers() = apiService.getUsers()
 }
